@@ -1,0 +1,48 @@
+import React from "react";
+import { Link } from "react-scroll";
+import "./App.css";
+import Section from "./Section";
+
+const App = () => {
+  return (
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <Link to="section1" smooth={true} duration={500}>
+              Section 1
+            </Link>
+          </li>
+          <li>
+            <Link to="section2" smooth={true} duration={500}>
+              Section 2
+            </Link>
+          </li>
+          <li>
+            <Link to="section3" smooth={true} duration={500}>
+              Section 3
+            </Link>
+          </li>
+        </ul>
+      </nav>
+
+      <Section
+        id="section1"
+        title="Section 1"
+        content="Content for section 1"
+      />
+      <Section
+        id="section2"
+        title="Section 2"
+        content="Content for section 2"
+      />
+      <Section
+        id="section3"
+        title="Section 3"
+        content="Content for section 3"
+      />
+    </div>
+  );
+};
+
+export default App;
