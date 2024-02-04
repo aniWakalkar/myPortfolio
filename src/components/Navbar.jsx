@@ -26,8 +26,8 @@ const navigation = [
   },
   {
     section: "section5",
-    name: "My Resume",
-    href: "/portfolio/myResume",
+    name: "Resume",
+    href: "/portfolio/Resume",
     current: false,
   },
   {
@@ -46,7 +46,7 @@ function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="w-full sticky top-0 bg-transparent font-serif p-5 text-white text-xl"
+      className="w-full sticky top-0 bg-[#47434392] font-serif text-white text-xl rounded-2xl"
     >
       {({ open }) => (
         <>
@@ -87,10 +87,7 @@ function Navbar() {
                         smooth={true}
                         duration={500}
                         className={classNames(
-                          item.current
-                            ? " text-white cursor-default ml-10 p-0 text-xl"
-                            : " text-gray-400 hover:text-white cursor-default ml-10 p-0",
-                          "rounded-md font-serif p-0 cursor-default text-xl"
+                          " text-[#31f500] hover:text-white ml-10 rounded-md font-serif p-0 cursor-default text-xl"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >

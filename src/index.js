@@ -5,18 +5,12 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 // getting all resducers and managing all states
-import { Provider } from "react-redux";
-import { createStore } from "redux";
-import allReducer from "./stateManager/reducers/index";
-const store = createStore(allReducer);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Provider store={store}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Provider>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
