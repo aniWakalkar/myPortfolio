@@ -14,24 +14,18 @@ const navigation = [
   },
   {
     section: "section3",
-    name: "Portfolio",
-    href: "/portfolio/portfolio",
-    current: false,
-  },
-  {
-    section: "section4",
     name: "Skills",
     href: "/portfolio/skills",
     current: false,
   },
   {
-    section: "section5",
+    section: "section4",
     name: "Resume",
     href: "/portfolio/Resume",
     current: false,
   },
   {
-    section: "section6",
+    section: "section5",
     name: "Contact",
     href: "/portfolio/contact",
     current: false,
@@ -46,7 +40,7 @@ function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="w-full sticky top-0 bg-[#47434392] font-serif text-white text-xl rounded-2xl"
+      className="w-full sticky top-0 bg-[#47434392] font-serif text-white text-xl rounded-xl m-5 border border-[#e2d1d168] p-2"
     >
       {({ open }) => (
         <>
@@ -87,7 +81,7 @@ function Navbar() {
                         smooth={true}
                         duration={500}
                         className={classNames(
-                          " text-[#31f500] hover:text-white ml-10 rounded-md font-serif p-0 cursor-default text-xl"
+                          " text-white hover:text-red-300 ml-10 rounded-md font-serif p-0 cursor-default text-xl"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
